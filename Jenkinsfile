@@ -2,17 +2,20 @@ pipeline {
     agent any
 
     stages {
-      
-        stage('test') {
+        stage('Hello') {
             steps {
-                echo 'test'
-                sh """
-                    echo "build number is ${BUILD_NUMBER}"
+                
+                echo 'done by ghada ' sh """
+                   
                     docker ps
-                    curl --help
+                  ls -la 
                 """
+                
+                
             }
-      
         }
+      
+        
+        
     }
 }
