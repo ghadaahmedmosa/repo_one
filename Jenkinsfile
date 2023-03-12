@@ -17,21 +17,7 @@ pipeline {
                     curl --help
                 """
             }
-        }
-        stage('publish') {
-            steps {
-                echo 'publish'
-            }
-        }
-        stage('sonarqube') {
-            steps {
-                echo 'sonarqube'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'deploy'
-            }
-        }
+      
+        
     }
 }
