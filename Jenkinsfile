@@ -2,17 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('test') {
+        stage('Hello') {
             steps {
-                
-                echo 'test '
-                sh """
-                   
-                    docker ps
-                  ls -la 
-                """
-                
-                
+                echo 'Hello World'
             }
         }
       
