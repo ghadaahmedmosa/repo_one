@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('test') {
             steps {
                 
-                echo 'done by ghada ' sh """
+                echo 'test '
+                sh """
                    
                     docker ps
                   ls -la 
